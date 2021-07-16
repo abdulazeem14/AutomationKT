@@ -12,9 +12,10 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
+import Manager.POManager;
+import common.Base;
 import pageObjects.HomePage;
-import pageObjects.POManager;
-import resources.Base;
+
 
 public class Contact extends Base{
 	SoftAssert s_assert;
