@@ -9,10 +9,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+
+import common.Base;
 import pageObjects.Cart;
 import pageObjects.HomePage;
 import pageObjects.PDP;
-import resources.Base;
 
 public class POManager extends Base{
 	private WebDriver wd;
@@ -37,6 +38,7 @@ public class POManager extends Base{
 	{
 		return (cart == null) ? cart = new Cart(wd) : cart;
 	}
+ 
 	public void navigatetoLogin()
 	{
 		hp.login().click();	
@@ -71,9 +73,11 @@ public void performImplicitWait(WebDriver wd) {
 	wd.manage().timeouts().implicitlyWait(500, TimeUnit.SECONDS);
 	
 }
-public void performExplictwait(WebDriver wd,By xpath)
+
+public void performExplictwait(WebDriver WD,By xpath)
 {
-	WebDriverWait wait = new WebDriverWait(wd,1000);
+	WebDriverWait wait = new WebDriverWait(WD,1000);
+
 	wait.until(ExpectedConditions.visibilityOfElementLocated(xpath));
 }
 
