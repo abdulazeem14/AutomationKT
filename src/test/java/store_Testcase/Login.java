@@ -31,15 +31,15 @@ public class Login extends Base{
 		public static SoftAssert s_assert;
 		WebDriver wd;
 		@Test(dataProvider="validtestdata")
-		public void loginCheckEdge(HashMap<String,String> td) throws IOException, InterruptedException {
+		public void loginCheckEdge(HashMap<String,String> testdata) throws IOException, InterruptedException {
 			log=new ArrayList<String>();
 			s_assert=new SoftAssert();
 			wd=initializeDriver("Edge");
-			String Username=td.get("UserName");
-			String Password=td.get("Password");
-			String Function=td.get("Function");
-			String TestId=td.get("Test Id");
-			String AlertMessage=td.get("AlertMessage");
+			String Username=testdata.get("UserName");
+			String Password=testdata.get("Password");
+			String Function=testdata.get("Function");
+			String TestId=testdata.get("Test Id");
+			String AlertMessage=testdata.get("AlertMessage");
 				Navigatetosite(wd);
 					log.add("Store Website is Loaded with given URL:"+prop.getProperty("url"));
 			POManager pom=new POManager(wd);
@@ -68,7 +68,7 @@ public class Login extends Base{
 	if(w.until(ExpectedConditions.alertIsPresent())!=null)
 		{
 			s_assert.assertEquals(wd.switchTo().alert().getText(), AlertMessage);
-			log.add(td.get("AlertMessage")+": Alert message is displayed as expected");
+			log.add(testdata.get("AlertMessage")+": Alert message is displayed as expected");
 			pom.alertaccept(wd);
 		}	
 		}
