@@ -1,0 +1,5 @@
+17:42:11.276 [main] INFO  resources.Base - Launching Google chrome Driver version 89 for this test
+17:42:14.686 [main] INFO  resources.Base - Login success
+17:42:14.889 [main] INFO  resources.Base - Navigating back using Browser Back button
+17:42:18.810 [main] INFO  resources.Base - Launching Google chrome Driver version 89 for this test
+17:50:18.336 [main] INFO  resources.Base - Launching Google chrome Driver version 89 for this test

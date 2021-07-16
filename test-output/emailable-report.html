@@ -1,0 +1,224 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.result,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.result td,table.result th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.result th {vertical-align:bottom}
+tr.param th {padding-left:1em;padding-right:1em}
+tr.param td {padding-left:.5em;padding-right:2em}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.result td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.result tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">18</td><td class="numi">16</td><td class="numi">0</td><td class="numi_attn">18</td><td class="numi">205.5 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+</table>
+<table cellspacing="0" cellpadding="0" class="passed" id="summary">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">Default test &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="18">store_Testcase.Login</td><td><a href="#m1"><b>loginCheckChrome</b>  </a></td><td class="numi">1</td><td>1626420948215</td><td class="numi">7353</td></tr><tr class="failedodd"><td><a href="#m2"><b>loginCheckChrome</b>  </a></td><td class="numi">1</td><td>1626420948215</td><td class="numi">7353</td></tr><tr class="failedodd"><td><a href="#m3"><b>loginCheckChrome</b>  </a></td><td class="numi">1</td><td>1626420948215</td><td class="numi">7353</td></tr><tr class="failedodd"><td><a href="#m4"><b>loginCheckChrome</b>  </a></td><td class="numi">1</td><td>1626420948215</td><td class="numi">7353</td></tr><tr class="failedodd"><td><a href="#m5"><b>loginCheckChrome</b>  </a></td><td class="numi">1</td><td>1626420948215</td><td class="numi">7353</td></tr><tr class="failedodd"><td><a href="#m6"><b>loginCheckChrome</b>  </a></td><td class="numi">1</td><td>1626420948215</td><td class="numi">7353</td></tr><tr class="failedodd"><td><a href="#m7"><b>loginCheckChrome</b>  </a></td><td class="numi">1</td><td>1626420948215</td><td class="numi">7353</td></tr><tr class="failedodd"><td><a href="#m8"><b>loginCheckChrome</b>  </a></td><td class="numi">1</td><td>1626420948215</td><td class="numi">7353</td></tr><tr class="failedodd"><td><a href="#m9"><b>loginCheckChrome</b>  </a></td><td class="numi">1</td><td>1626420948215</td><td class="numi">7353</td></tr><tr class="failedodd"><td><a href="#m10"><b>loginCheckEdge</b>  </a></td><td class="numi">1</td><td>1626421068090</td><td class="numi">11626</td></tr><tr class="failedodd"><td><a href="#m11"><b>loginCheckEdge</b>  </a></td><td class="numi">1</td><td>1626421068090</td><td class="numi">11626</td></tr><tr class="failedodd"><td><a href="#m12"><b>loginCheckEdge</b>  </a></td><td class="numi">1</td><td>1626421068090</td><td class="numi">11626</td></tr><tr class="failedodd"><td><a href="#m13"><b>loginCheckEdge</b>  </a></td><td class="numi">1</td><td>1626421068090</td><td class="numi">11626</td></tr><tr class="failedodd"><td><a href="#m14"><b>loginCheckEdge</b>  </a></td><td class="numi">1</td><td>1626421068090</td><td class="numi">11626</td></tr><tr class="failedodd"><td><a href="#m15"><b>loginCheckEdge</b>  </a></td><td class="numi">1</td><td>1626421068090</td><td class="numi">11626</td></tr><tr class="failedodd"><td><a href="#m16"><b>loginCheckEdge</b>  </a></td><td class="numi">1</td><td>1626421068090</td><td class="numi">11626</td></tr><tr class="failedodd"><td><a href="#m17"><b>loginCheckEdge</b>  </a></td><td class="numi">1</td><td>1626421068090</td><td class="numi">11626</td></tr><tr class="failedodd"><td><a href="#m18"><b>loginCheckEdge</b>  </a></td><td class="numi">1</td><td>1626421068090</td><td class="numi">11626</td></tr>
+<tr><th colspan="4">Default test &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="18">store_Testcase.Login</td><td><a href="#m19"><b>loginCheckChrome</b>  </a></td><td class="numi">8</td><td>1626420900822</td><td class="numi">77649</td></tr><tr class="passedodd"><td><a href="#m20"><b>loginCheckChrome</b>  </a></td><td class="numi">8</td><td>1626420900822</td><td class="numi">77649</td></tr><tr class="passedodd"><td><a href="#m21"><b>loginCheckChrome</b>  </a></td><td class="numi">8</td><td>1626420900822</td><td class="numi">77649</td></tr><tr class="passedodd"><td><a href="#m22"><b>loginCheckChrome</b>  </a></td><td class="numi">8</td><td>1626420900822</td><td class="numi">77649</td></tr><tr class="passedodd"><td><a href="#m23"><b>loginCheckChrome</b>  </a></td><td class="numi">8</td><td>1626420900822</td><td class="numi">77649</td></tr><tr class="passedodd"><td><a href="#m24"><b>loginCheckChrome</b>  </a></td><td class="numi">8</td><td>1626420900822</td><td class="numi">77649</td></tr><tr class="passedodd"><td><a href="#m25"><b>loginCheckChrome</b>  </a></td><td class="numi">8</td><td>1626420900822</td><td class="numi">77649</td></tr><tr class="passedodd"><td><a href="#m26"><b>loginCheckChrome</b>  </a></td><td class="numi">8</td><td>1626420900822</td><td class="numi">77649</td></tr><tr class="passedodd"><td><a href="#m27"><b>loginCheckChrome</b>  </a></td><td class="numi">8</td><td>1626420900822</td><td class="numi">77649</td></tr><tr class="passedodd"><td><a href="#m28"><b>loginCheckEdge</b>  </a></td><td class="numi">8</td><td>1626420978619</td><td class="numi">126217</td></tr><tr class="passedodd"><td><a href="#m29"><b>loginCheckEdge</b>  </a></td><td class="numi">8</td><td>1626420978619</td><td class="numi">126217</td></tr><tr class="passedodd"><td><a href="#m30"><b>loginCheckEdge</b>  </a></td><td class="numi">8</td><td>1626420978619</td><td class="numi">126217</td></tr><tr class="passedodd"><td><a href="#m31"><b>loginCheckEdge</b>  </a></td><td class="numi">8</td><td>1626420978619</td><td class="numi">126217</td></tr><tr class="passedodd"><td><a href="#m32"><b>loginCheckEdge</b>  </a></td><td class="numi">8</td><td>1626420978619</td><td class="numi">126217</td></tr><tr class="passedodd"><td><a href="#m33"><b>loginCheckEdge</b>  </a></td><td class="numi">8</td><td>1626420978619</td><td class="numi">126217</td></tr><tr class="passedodd"><td><a href="#m34"><b>loginCheckEdge</b>  </a></td><td class="numi">8</td><td>1626420978619</td><td class="numi">126217</td></tr><tr class="passedodd"><td><a href="#m35"><b>loginCheckEdge</b>  </a></td><td class="numi">8</td><td>1626420978619</td><td class="numi">126217</td></tr><tr class="passedodd"><td><a href="#m36"><b>loginCheckEdge</b>  </a></td><td class="numi">8</td><td>1626420978619</td><td class="numi">126217</td></tr>
+</table>
+<h1>Default test</h1>
+<h2 id="m1">store_Testcase.Login:loginCheckEdge</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{Function=logout, UserName=ducati@gmail.com, Test Id=Store-407, AlertMessage=, Password=ducati14}</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>unexpected alert open: {Alert text : Please fill out Username and Password.}
+  (Session info: MicrosoftEdge=91.0.864.67): Please fill out Username and Password.
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;QT-INBG-LT0897&apos;, ip: &apos;192.168.29.38&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 91.0.864.67, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:54219}, msedge: {msedgedriverVersion: 91.0.864.70 (8c35a0dac4b4b8..., userDataDir: C:\Users\AZEEM~1.HAM\AppDat...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 62bf4f23c5fa1adb347e0c787d66a702
+*** Element info: {Using=xpath, value=//*[@id=&apos;logout2&apos;]}</p>
+org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:349)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementsByXPath(RemoteWebDriver.java:428)
+<br/>at org.openqa.selenium.By$ByXPath.findElements(By.java:348)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:310)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
+<br/>at pageObjects.POManager.performExplictwait(POManager.java:74)
+<br/>at store_Testcase.Login.loginCheckEdge(Login.java:54)
+<br/>25 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m2">store_Testcase.Login:loginCheckChrome</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{Function=logout, UserName=ducati@gmail.com, Test Id=Store-407, AlertMessage=, Password=ducati14}</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>unexpected alert open: {Alert text : Please fill out Username and Password.}
+  (Session info: chrome=91.0.4472.124): Please fill out Username and Password.
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;QT-INBG-LT0897&apos;, ip: &apos;192.168.29.38&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\AZEEM~1.HAM\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:60426}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 41ac9b7b458cfde711d067e1c56e86ac
+*** Element info: {Using=xpath, value=//*[@id=&apos;logout2&apos;]}</p>
+org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:349)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementsByXPath(RemoteWebDriver.java:428)
+<br/>at org.openqa.selenium.By$ByXPath.findElements(By.java:348)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:310)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
+<br/>at pageObjects.POManager.performExplictwait(POManager.java:74)
+<br/>at store_Testcase.Login.loginCheckChrome(Login.java:107)
+<br/>25 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m3">store_Testcase.Login:loginCheckEdge</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{Function=, UserName=DUcati@gmail.com, Test Id=Store-405, AlertMessage=User does not exist., Password=Ducati14}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m4">store_Testcase.Login:loginCheckEdge</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{Function=, UserName=ducati@gmail.com, Test Id=Store-402, AlertMessage=, Password=ducati14}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m5">store_Testcase.Login:loginCheckChrome</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{Function=, UserName=ducati@gmail.com, Test Id=Store-402, AlertMessage=, Password=ducati14}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m6">store_Testcase.Login:loginCheckChrome</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{Function=session, UserName=ducati@gmail.com, Test Id=Store-408, AlertMessage=, Password=ducati14}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m7">store_Testcase.Login:loginCheckChrome</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{Function=, UserName=DUcati@gmail.com, Test Id=Store-405, AlertMessage=User does not exist., Password=Ducati14}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m8">store_Testcase.Login:loginCheckEdge</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{Function=session, UserName=ducati@gmail.com, Test Id=Store-408, AlertMessage=, Password=ducati14}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m9">store_Testcase.Login:loginCheckEdge</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{Function=, UserName=, Test Id=Store-406, AlertMessage=Please fill out Username and Password., Password=}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m10">store_Testcase.Login:loginCheckChrome</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{Function=, UserName=invaliduser, Test Id=Store-403, AlertMessage=User does not exist., Password=pannigale}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m11">store_Testcase.Login:loginCheckChrome</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{Function=, UserName=ducati@gmail.com, Test Id=Store-404, AlertMessage=Wrong password., Password=Volkswagen}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m12">store_Testcase.Login:loginCheckChrome</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{Function=closeButton, UserName=, Test Id=Store-409, AlertMessage=, Password=}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m13">store_Testcase.Login:loginCheckChrome</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{Function=xclose, UserName=, Test Id=Store-410, AlertMessage=, Password=}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m14">store_Testcase.Login:loginCheckEdge</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{Function=closeButton, UserName=, Test Id=Store-409, AlertMessage=, Password=}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m15">store_Testcase.Login:loginCheckEdge</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{Function=, UserName=invaliduser, Test Id=Store-403, AlertMessage=User does not exist., Password=pannigale}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m16">store_Testcase.Login:loginCheckEdge</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{Function=xclose, UserName=, Test Id=Store-410, AlertMessage=, Password=}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m17">store_Testcase.Login:loginCheckChrome</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{Function=, UserName=, Test Id=Store-406, AlertMessage=Please fill out Username and Password., Password=}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m18">store_Testcase.Login:loginCheckEdge</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{Function=, UserName=ducati@gmail.com, Test Id=Store-404, AlertMessage=Wrong password., Password=Volkswagen}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>

@@ -1,0 +1,5 @@
+12:11:58.108 [main] INFO  resources.Base -  userName is displayed in the lefthand side of the screen
+12:14:31.316 [main] INFO  resources.Base -  userName is displayed in the lefthand side of the screen
+12:17:24.889 [main] INFO  resources.Base - Pass:Application title is displayed as QTRecognition
+12:36:48.879 [main] INFO  resources.Base - successful search user able to see the list of kudos sent form or to the user.
+12:59:10.932 [main] FATAL resources.Base - Failed:user is not  able to see Kudos sent from him to other employees

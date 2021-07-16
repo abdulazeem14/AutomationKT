@@ -1,0 +1,5 @@
+17:51:20.471 [main] INFO  resources.Base - Kudo Search option is present in the Activity Page
+18:20:05.062 [main] ERROR resources.Base - #fdcc16 element color used in home page is not approved by Qualitest primary colors.
+18:20:05.357 [main] ERROR resources.Base - #fff element color used in home page is not approved by Qualitest primary colors.
+18:20:05.661 [main] ERROR resources.Base - #2a2559 element color used in home page is not approved by Qualitest primary colors
+18:20:36.638 [main] INFO  resources.Base - Precondition:Login with valid UserName and Password in QTRecognition

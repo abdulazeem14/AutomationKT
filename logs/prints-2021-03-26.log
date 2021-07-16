@@ -1,0 +1,5 @@
+01:18:34.667 [main] INFO  resources.Base - Launching Google chrome Driver version 89 for this test
+02:10:19.248 [main] INFO  resources.Base - Pass:Application title is displayed as QTRecognition
+02:10:43.255 [main] INFO  resources.Base - Pass:Application title is displayed as QTRecognition
+03:22:58.703 [main] INFO  resources.Base - Passed: Eamail field is mandatory user can't send kudos without email
+03:33:33.409 [main] INFO  resources.Base - Pass: Kudos were sent to Users in the Recent Contacts

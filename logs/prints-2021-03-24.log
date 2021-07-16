@@ -1,0 +1,5 @@
+11:56:44.232 [main] ERROR resources.Base - Failed:To increase Count of Kudos when new Kudos were sent
+12:31:19.416 [main] INFO  resources.Base - Pass:user is able to see Kudos sent to him form other employees
+12:32:20.558 [main] INFO  resources.Base - Pass:user is able to see Kudos sent to him form other employees
+12:40:03.411 [main] ERROR resources.Base - Failed:User should not be allowed to send kudos to himself/herself
+12:41:38.918 [main] FATAL resources.Base - Failed:user is not  able to see Kudos sent to him form other employees

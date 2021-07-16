@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-03-22T14:50:57Z" name="Suite" finished-at="2021-03-22T14:51:17Z" duration-ms="20086">
+    <groups>
+    </groups>
+    <test started-at="2021-03-22T14:50:57Z" name="Module1" finished-at="2021-03-22T14:50:57Z" duration-ms="6">
+    </test> <!-- Module1 -->
+    <test started-at="2021-03-22T14:50:57Z" name="Module3" finished-at="2021-03-22T14:51:17Z" duration-ms="20057">
+      <class name="Module3.SendKudos">
+        <test-method is-config="true" signature="Bsuite()[pri:0, instance:Module3.SendKudos@1ed6388a]" started-at="2021-03-22T20:20:56Z" name="Bsuite" finished-at="2021-03-22T20:20:57Z" duration-ms="665" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Bsuite -->
+        <test-method signature="sendKudos(java.lang.String, java.lang.String)[pri:0, instance:Module3.SendKudos@1ed6388a]" started-at="2021-03-22T20:20:57Z" name="sendKudos" data-provider="validdata" finished-at="2021-03-22T20:21:17Z" duration-ms="20048" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[azeem.hameed@qualitestgroup.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[P@ssw0rd]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sendKudos -->
+      </class> <!-- Module3.SendKudos -->
+    </test> <!-- Module3 -->
+  </suite> <!-- Suite -->
+</testng-results>

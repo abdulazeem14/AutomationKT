@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Default_suite" class="navigator-link">
+              <span class="suite-name border-failed">Default suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
+                    <span>C:\Users\azeem.hameed\AppData\Local\Temp\testng-eclipse-1385622587\testng-customsuite.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Default_suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Default_suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Default_suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Default_suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Default_suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Default_suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">18 methods, 2 failed,   16 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="store_Testcase.Login" class="method navigator-link" hash-for-method="loginCheckChrome({Function=logout, UserName=ducati@gmail.com, Test Id=Store-407, AlertMessage=, Password=ducati14})">loginCheckChrome({Function=logout, UserName=ducati@gmail.com, Test Id=Store-407, AlertMessage=, Password=ducati14})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="store_Testcase.Login" class="method navigator-link" hash-for-method="loginCheckEdge({Function=logout, UserName=ducati@gmail.com, Test Id=Store-407, AlertMessage=, Password=ducati14})">loginCheckEdge({Function=logout, UserName=ducati@gmail.com, Test Id=Store-407, AlertMessage=, Password=ducati14})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Default_suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="store_Testcase.Login" class="method navigator-link" hash-for-method="loginCheckChrome({Function=, UserName=ducati@gmail.com, Test Id=Store-402, AlertMessage=, Password=ducati14})">loginCheckChrome({Function=, UserName=ducati@gmail.com, Test Id=Store-402, AlertMessage=, Password=ducati14})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="store_Testcase.Login" class="method navigator-link" hash-for-method="loginCheckChrome({Function=session, UserName=ducati@gmail.com, Test Id=Store-408, AlertMessage=, Password=ducati14})">loginCheckChrome({Function=session, UserName=ducati@gmail.com, Test Id=Store-408, AlertMessage=, Password=ducati14})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="store_Testcase.Login" class="method navigator-link" hash-for-method="loginCheckChrome({Function=, UserName=DUcati@gmail.com, Test Id=Store-405, AlertMessage=User does not exist., Passwor...)">loginCheckChrome({Function=, UserName=DUcati@gmail.com, Test Id=Store-405, AlertMessage=User does not exist., Passwor...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="store_Testcase.Login" class="method navigator-link" hash-for-method="loginCheckChrome({Function=, UserName=invaliduser, Test Id=Store-403, AlertMessage=User does not exist., Password=pan...)">loginCheckChrome({Function=, UserName=invaliduser, Test Id=Store-403, AlertMessage=User does not exist., Password=pan...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="store_Testcase.Login" class="method navigator-link" hash-for-method="loginCheckChrome({Function=, UserName=ducati@gmail.com, Test Id=Store-404, AlertMessage=Wrong password., Password=Vol...)">loginCheckChrome({Function=, UserName=ducati@gmail.com, Test Id=Store-404, AlertMessage=Wrong password., Password=Vol...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="store_Testcase.Login" class="method navigator-link" hash-for-method="loginCheckChrome({Function=closeButton, UserName=, Test Id=Store-409, AlertMessage=, Password=})">loginCheckChrome({Function=closeButton, UserName=, Test Id=Store-409, AlertMessage=, Password=})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="store_Testcase.Login" class="method navigator-link" hash-for-method="loginCheckChrome({Function=xclose, UserName=, Test Id=Store-410, AlertMessage=, Password=})">loginCheckChrome({Function=xclose, UserName=, Test Id=Store-410, AlertMessage=, Password=})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="store_Testcase.Login" class="method navigator-link" hash-for-method="loginCheckChrome({Function=, UserName=, Test Id=Store-406, AlertMessage=Please fill out Username and Password., Passw...)">loginCheckChrome({Function=, UserName=, Test Id=Store-406, AlertMessage=Please fill out Username and Password., Passw...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="store_Testcase.Login" class="method navigator-link" hash-for-method="loginCheckEdge({Function=, UserName=DUcati@gmail.com, Test Id=Store-405, AlertMessage=User does not exist., Passwor...)">loginCheckEdge({Function=, UserName=DUcati@gmail.com, Test Id=Store-405, AlertMessage=User does not exist., Passwor...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="store_Testcase.Login" class="method navigator-link" hash-for-method="loginCheckEdge({Function=, UserName=ducati@gmail.com, Test Id=Store-402, AlertMessage=, Password=ducati14})">loginCheckEdge({Function=, UserName=ducati@gmail.com, Test Id=Store-402, AlertMessage=, Password=ducati14})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="store_Testcase.Login" class="method navigator-link" hash-for-method="loginCheckEdge({Function=session, UserName=ducati@gmail.com, Test Id=Store-408, AlertMessage=, Password=ducati14})">loginCheckEdge({Function=session, UserName=ducati@gmail.com, Test Id=Store-408, AlertMessage=, Password=ducati14})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="store_Testcase.Login" class="method navigator-link" hash-for-method="loginCheckEdge({Function=, UserName=, Test Id=Store-406, AlertMessage=Please fill out Username and Password., Passw...)">loginCheckEdge({Function=, UserName=, Test Id=Store-406, AlertMessage=Please fill out Username and Password., Passw...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="store_Testcase.Login" class="method navigator-link" hash-for-method="loginCheckEdge({Function=closeButton, UserName=, Test Id=Store-409, AlertMessage=, Password=})">loginCheckEdge({Function=closeButton, UserName=, Test Id=Store-409, AlertMessage=, Password=})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="store_Testcase.Login" class="method navigator-link" hash-for-method="loginCheckEdge({Function=, UserName=invaliduser, Test Id=Store-403, AlertMessage=User does not exist., Password=pan...)">loginCheckEdge({Function=, UserName=invaliduser, Test Id=Store-403, AlertMessage=User does not exist., Password=pan...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="store_Testcase.Login" class="method navigator-link" hash-for-method="loginCheckEdge({Function=xclose, UserName=, Test Id=Store-410, AlertMessage=, Password=})">loginCheckEdge({Function=xclose, UserName=, Test Id=Store-410, AlertMessage=, Password=})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="store_Testcase.Login" class="method navigator-link" hash-for-method="loginCheckEdge({Function=, UserName=ducati@gmail.com, Test Id=Store-404, AlertMessage=Wrong password., Password=Vol...)">loginCheckEdge({Function=, UserName=ducati@gmail.com, Test Id=Store-404, AlertMessage=Wrong password., Password=Vol...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Default_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">store_Testcase.Login</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginCheckChrome({Function=logout, UserName=ducati@gmail.com, Test Id=Store-407, AlertMessage=, Password=ducati14})">
+                  </a> <!-- loginCheckChrome({Function=logout, UserName=ducati@gmail.com, Test Id=Store-407, AlertMessage=, Password=ducati14}) -->
+                  <span class="method-name">loginCheckChrome</span>
+                  <span class="parameters">({Function=logout, UserName=ducati@gmail.com, Test Id=Store-407, AlertMessage=, Password=ducati14})</span>
+                  <div class="stack-trace"><b>"org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Please fill out Username and Password.}
+  (Session info: chrome=91.0.4472.124): Please fill out Username and Password.
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;QT-INBG-LT0897&apos;, ip: &apos;192.168.29.38&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\AZEEM~1.HAM\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:60426}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 41ac9b7b458cfde711d067e1c56e86ac
+*** Element info: {Using=xpath, value=//*[@id=&apos;logout2&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:349)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElements(By.java:348)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:310)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
+	at pageObjects.POManager.performExplictwait(POManager.java:74)
+	at store_Testcase.Login.loginCheckChrome(Login.java:107)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+<br/> org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Please fill out Username and Password.}
+  (Session info: chrome=91.0.4472.124): Please fill out Username and Password.
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;QT-INBG-LT0897&apos;, ip: &apos;192.168.29.38&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\AZEEM~1.HAM\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:60426}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 41ac9b7b458cfde711d067e1c56e86ac
+*** Element info: {Using=xpath, value=//*[@id=&apos;logout2&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:349)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElements(By.java:348)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:310)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
+	at pageObjects.POManager.performExplictwait(POManager.java:74)
+	at store_Testcase.Login.loginCheckChrome(Login.java:107)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+"</b><br>org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)<br>org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)<br>org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)<br>org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)<br>org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)<br>org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:349)<br>org.openqa.selenium.remote.RemoteWebDriver.findElementsByXPath(RemoteWebDriver.java:428)<br>org.openqa.selenium.By$ByXPath.findElements(By.java:348)<br>org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:310)<br>org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)<br>org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)<br>org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)<br>org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)<br>org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)<br>pageObjects.POManager.performExplictwait(POManager.java:74)<br>store_Testcase.Login.loginCheckChrome(Login.java:107)<br>java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)<br>java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.base/java.lang.reflect.Method.invoke(Method.java:564)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br>org.testng.TestNG.run(TestNG.java:1031)<br>org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)<br>org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br>org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br>
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginCheckEdge({Function=logout, UserName=ducati@gmail.com, Test Id=Store-407, AlertMessage=, Password=ducati14})">
+                  </a> <!-- loginCheckEdge({Function=logout, UserName=ducati@gmail.com, Test Id=Store-407, AlertMessage=, Password=ducati14}) -->
+                  <span class="method-name">loginCheckEdge</span>
+                  <span class="parameters">({Function=logout, UserName=ducati@gmail.com, Test Id=Store-407, AlertMessage=, Password=ducati14})</span>
+                  <div class="stack-trace"><b>"org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Please fill out Username and Password.}
+  (Session info: MicrosoftEdge=91.0.864.67): Please fill out Username and Password.
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;QT-INBG-LT0897&apos;, ip: &apos;192.168.29.38&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 91.0.864.67, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:54219}, msedge: {msedgedriverVersion: 91.0.864.70 (8c35a0dac4b4b8..., userDataDir: C:\Users\AZEEM~1.HAM\AppDat...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 62bf4f23c5fa1adb347e0c787d66a702
+*** Element info: {Using=xpath, value=//*[@id=&apos;logout2&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:349)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElements(By.java:348)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:310)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
+	at pageObjects.POManager.performExplictwait(POManager.java:74)
+	at store_Testcase.Login.loginCheckEdge(Login.java:54)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+<br/> org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Please fill out Username and Password.}
+  (Session info: MicrosoftEdge=91.0.864.67): Please fill out Username and Password.
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;QT-INBG-LT0897&apos;, ip: &apos;192.168.29.38&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 91.0.864.67, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:54219}, msedge: {msedgedriverVersion: 91.0.864.70 (8c35a0dac4b4b8..., userDataDir: C:\Users\AZEEM~1.HAM\AppDat...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 62bf4f23c5fa1adb347e0c787d66a702
+*** Element info: {Using=xpath, value=//*[@id=&apos;logout2&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:349)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElements(By.java:348)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:310)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
+	at pageObjects.POManager.performExplictwait(POManager.java:74)
+	at store_Testcase.Login.loginCheckEdge(Login.java:54)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+"</b><br>org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)<br>org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)<br>org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)<br>org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)<br>org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)<br>org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:349)<br>org.openqa.selenium.remote.RemoteWebDriver.findElementsByXPath(RemoteWebDriver.java:428)<br>org.openqa.selenium.By$ByXPath.findElements(By.java:348)<br>org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:310)<br>org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)<br>org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)<br>org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)<br>org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)<br>org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)<br>pageObjects.POManager.performExplictwait(POManager.java:74)<br>store_Testcase.Login.loginCheckEdge(Login.java:54)<br>java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)<br>java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.base/java.lang.reflect.Method.invoke(Method.java:564)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br>org.testng.TestNG.run(TestNG.java:1031)<br>org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)<br>org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br>org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br>
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">store_Testcase.Login</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginCheckChrome({Function=, UserName=ducati@gmail.com, Test Id=Store-402, AlertMessage=, Password=ducati14})">
+                  </a> <!-- loginCheckChrome({Function=, UserName=ducati@gmail.com, Test Id=Store-402, AlertMessage=, Password=ducati14}) -->
+                  <span class="method-name">loginCheckChrome</span>
+                  <span class="parameters">({Function=, UserName=ducati@gmail.com, Test Id=Store-402, AlertMessage=, Password=ducati14})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginCheckChrome({Function=session, UserName=ducati@gmail.com, Test Id=Store-408, AlertMessage=, Password=ducati14})">
+                  </a> <!-- loginCheckChrome({Function=session, UserName=ducati@gmail.com, Test Id=Store-408, AlertMessage=, Password=ducati14}) -->
+                  <span class="method-name">loginCheckChrome</span>
+                  <span class="parameters">({Function=session, UserName=ducati@gmail.com, Test Id=Store-408, AlertMessage=, Password=ducati14})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginCheckChrome({Function=, UserName=DUcati@gmail.com, Test Id=Store-405, AlertMessage=User does not exist., Passwor...)">
+                  </a> <!-- loginCheckChrome({Function=, UserName=DUcati@gmail.com, Test Id=Store-405, AlertMessage=User does not exist., Passwor...) -->
+                  <span class="method-name">loginCheckChrome</span>
+                  <span class="parameters">({Function=, UserName=DUcati@gmail.com, Test Id=Store-405, AlertMessage=User does not exist., Password=Ducati14})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginCheckChrome({Function=, UserName=invaliduser, Test Id=Store-403, AlertMessage=User does not exist., Password=pan...)">
+                  </a> <!-- loginCheckChrome({Function=, UserName=invaliduser, Test Id=Store-403, AlertMessage=User does not exist., Password=pan...) -->
+                  <span class="method-name">loginCheckChrome</span>
+                  <span class="parameters">({Function=, UserName=invaliduser, Test Id=Store-403, AlertMessage=User does not exist., Password=pannigale})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginCheckChrome({Function=, UserName=ducati@gmail.com, Test Id=Store-404, AlertMessage=Wrong password., Password=Vol...)">
+                  </a> <!-- loginCheckChrome({Function=, UserName=ducati@gmail.com, Test Id=Store-404, AlertMessage=Wrong password., Password=Vol...) -->
+                  <span class="method-name">loginCheckChrome</span>
+                  <span class="parameters">({Function=, UserName=ducati@gmail.com, Test Id=Store-404, AlertMessage=Wrong password., Password=Volkswagen})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginCheckChrome({Function=closeButton, UserName=, Test Id=Store-409, AlertMessage=, Password=})">
+                  </a> <!-- loginCheckChrome({Function=closeButton, UserName=, Test Id=Store-409, AlertMessage=, Password=}) -->
+                  <span class="method-name">loginCheckChrome</span>
+                  <span class="parameters">({Function=closeButton, UserName=, Test Id=Store-409, AlertMessage=, Password=})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginCheckChrome({Function=xclose, UserName=, Test Id=Store-410, AlertMessage=, Password=})">
+                  </a> <!-- loginCheckChrome({Function=xclose, UserName=, Test Id=Store-410, AlertMessage=, Password=}) -->
+                  <span class="method-name">loginCheckChrome</span>
+                  <span class="parameters">({Function=xclose, UserName=, Test Id=Store-410, AlertMessage=, Password=})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginCheckChrome({Function=, UserName=, Test Id=Store-406, AlertMessage=Please fill out Username and Password., Passw...)">
+                  </a> <!-- loginCheckChrome({Function=, UserName=, Test Id=Store-406, AlertMessage=Please fill out Username and Password., Passw...) -->
+                  <span class="method-name">loginCheckChrome</span>
+                  <span class="parameters">({Function=, UserName=, Test Id=Store-406, AlertMessage=Please fill out Username and Password., Password=})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginCheckEdge({Function=, UserName=DUcati@gmail.com, Test Id=Store-405, AlertMessage=User does not exist., Passwor...)">
+                  </a> <!-- loginCheckEdge({Function=, UserName=DUcati@gmail.com, Test Id=Store-405, AlertMessage=User does not exist., Passwor...) -->
+                  <span class="method-name">loginCheckEdge</span>
+                  <span class="parameters">({Function=, UserName=DUcati@gmail.com, Test Id=Store-405, AlertMessage=User does not exist., Password=Ducati14})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginCheckEdge({Function=, UserName=ducati@gmail.com, Test Id=Store-402, AlertMessage=, Password=ducati14})">
+                  </a> <!-- loginCheckEdge({Function=, UserName=ducati@gmail.com, Test Id=Store-402, AlertMessage=, Password=ducati14}) -->
+                  <span class="method-name">loginCheckEdge</span>
+                  <span class="parameters">({Function=, UserName=ducati@gmail.com, Test Id=Store-402, AlertMessage=, Password=ducati14})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginCheckEdge({Function=session, UserName=ducati@gmail.com, Test Id=Store-408, AlertMessage=, Password=ducati14})">
+                  </a> <!-- loginCheckEdge({Function=session, UserName=ducati@gmail.com, Test Id=Store-408, AlertMessage=, Password=ducati14}) -->
+                  <span class="method-name">loginCheckEdge</span>
+                  <span class="parameters">({Function=session, UserName=ducati@gmail.com, Test Id=Store-408, AlertMessage=, Password=ducati14})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginCheckEdge({Function=, UserName=, Test Id=Store-406, AlertMessage=Please fill out Username and Password., Passw...)">
+                  </a> <!-- loginCheckEdge({Function=, UserName=, Test Id=Store-406, AlertMessage=Please fill out Username and Password., Passw...) -->
+                  <span class="method-name">loginCheckEdge</span>
+                  <span class="parameters">({Function=, UserName=, Test Id=Store-406, AlertMessage=Please fill out Username and Password., Password=})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginCheckEdge({Function=closeButton, UserName=, Test Id=Store-409, AlertMessage=, Password=})">
+                  </a> <!-- loginCheckEdge({Function=closeButton, UserName=, Test Id=Store-409, AlertMessage=, Password=}) -->
+                  <span class="method-name">loginCheckEdge</span>
+                  <span class="parameters">({Function=closeButton, UserName=, Test Id=Store-409, AlertMessage=, Password=})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginCheckEdge({Function=, UserName=invaliduser, Test Id=Store-403, AlertMessage=User does not exist., Password=pan...)">
+                  </a> <!-- loginCheckEdge({Function=, UserName=invaliduser, Test Id=Store-403, AlertMessage=User does not exist., Password=pan...) -->
+                  <span class="method-name">loginCheckEdge</span>
+                  <span class="parameters">({Function=, UserName=invaliduser, Test Id=Store-403, AlertMessage=User does not exist., Password=pannigale})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginCheckEdge({Function=xclose, UserName=, Test Id=Store-410, AlertMessage=, Password=})">
+                  </a> <!-- loginCheckEdge({Function=xclose, UserName=, Test Id=Store-410, AlertMessage=, Password=}) -->
+                  <span class="method-name">loginCheckEdge</span>
+                  <span class="parameters">({Function=xclose, UserName=, Test Id=Store-410, AlertMessage=, Password=})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginCheckEdge({Function=, UserName=ducati@gmail.com, Test Id=Store-404, AlertMessage=Wrong password., Password=Vol...)">
+                  </a> <!-- loginCheckEdge({Function=, UserName=ducati@gmail.com, Test Id=Store-404, AlertMessage=Wrong password., Password=Vol...) -->
+                  <span class="method-name">loginCheckEdge</span>
+                  <span class="parameters">({Function=, UserName=ducati@gmail.com, Test Id=Store-404, AlertMessage=Wrong password., Password=Volkswagen})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+        </div> <!-- panel Default_suite -->
+        <div panel-name="test-xml-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\azeem.hameed\AppData\Local\Temp\testng-eclipse-1385622587\testng-customsuite.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite parallel=&quot;none&quot; name=&quot;Default suite&quot;&gt;
+  &lt;test name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;store_Testcase.Login&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Default test --&gt;
+&lt;/suite&gt; &lt;!-- Default suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Default test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Default_suite');
+function tableData_Default_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(18);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'loginCheckEdge')
+data.setCell(0, 2, 'store_Testcase.Login')
+data.setCell(0, 3, 23531);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'loginCheckEdge')
+data.setCell(1, 2, 'store_Testcase.Login')
+data.setCell(1, 3, 23180);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'loginCheckEdge')
+data.setCell(2, 2, 'store_Testcase.Login')
+data.setCell(2, 3, 15991);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'loginCheckEdge')
+data.setCell(3, 2, 'store_Testcase.Login')
+data.setCell(3, 3, 13925);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'loginCheckEdge')
+data.setCell(4, 2, 'store_Testcase.Login')
+data.setCell(4, 3, 12827);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'loginCheckChrome')
+data.setCell(5, 2, 'store_Testcase.Login')
+data.setCell(5, 3, 11899);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'loginCheckEdge')
+data.setCell(6, 2, 'store_Testcase.Login')
+data.setCell(6, 3, 11626);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'loginCheckEdge')
+data.setCell(7, 2, 'store_Testcase.Login')
+data.setCell(7, 3, 11456);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'loginCheckChrome')
+data.setCell(8, 2, 'store_Testcase.Login')
+data.setCell(8, 3, 10666);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'loginCheckChrome')
+data.setCell(9, 2, 'store_Testcase.Login')
+data.setCell(9, 3, 9252);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'loginCheckChrome')
+data.setCell(10, 2, 'store_Testcase.Login')
+data.setCell(10, 3, 8966);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'loginCheckChrome')
+data.setCell(11, 2, 'store_Testcase.Login')
+data.setCell(11, 3, 8705);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'loginCheckChrome')
+data.setCell(12, 2, 'store_Testcase.Login')
+data.setCell(12, 3, 7740);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'loginCheckEdge')
+data.setCell(13, 2, 'store_Testcase.Login')
+data.setCell(13, 3, 7503);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'loginCheckChrome')
+data.setCell(14, 2, 'store_Testcase.Login')
+data.setCell(14, 3, 7353);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'loginCheckChrome')
+data.setCell(15, 2, 'store_Testcase.Login')
+data.setCell(15, 3, 6582);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'loginCheckChrome')
+data.setCell(16, 2, 'store_Testcase.Login')
+data.setCell(16, 3, 6448);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'loginCheckEdge')
+data.setCell(17, 2, 'store_Testcase.Login')
+data.setCell(17, 3, 6150);
+window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 3 minutes</span>
+              <div id="times-div-Default_suite">
+              </div> <!-- times-div-Default_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">store_Testcase.Login</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">Bsuite</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="test-method">
+                <span class="method-name">loginCheckChrome({Function=, UserName=ducati@gmail.com, Test Id=Store-402, AlertMessage=, Password=ducati14})</span>
+                <span class="method-start">865 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=loginCheckChrome status=SUCCESS method=Login.loginCheckChrome(java.util.HashMap)[pr...)</span>
+                <span class="method-start">11532 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">loginCheckChrome({Function=, UserName=invaliduser, Test Id=Store-403, AlertMessage=User does not exist., Password=pan...)</span>
+                <span class="method-start">11548 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=loginCheckChrome status=SUCCESS method=Login.loginCheckChrome(java.util.HashMap)[pr...)</span>
+                <span class="method-start">20515 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">loginCheckChrome({Function=, UserName=ducati@gmail.com, Test Id=Store-404, AlertMessage=Wrong password., Password=Vol...)</span>
+                <span class="method-start">20517 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=loginCheckChrome status=SUCCESS method=Login.loginCheckChrome(java.util.HashMap)[pr...)</span>
+                <span class="method-start">29770 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">loginCheckChrome({Function=, UserName=DUcati@gmail.com, Test Id=Store-405, AlertMessage=User does not exist., Passwor...)</span>
+                <span class="method-start">29772 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=loginCheckChrome status=SUCCESS method=Login.loginCheckChrome(java.util.HashMap)[pr...)</span>
+                <span class="method-start">36355 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">loginCheckChrome({Function=, UserName=, Test Id=Store-406, AlertMessage=Please fill out Username and Password., Passw...)</span>
+                <span class="method-start">36357 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=loginCheckChrome status=SUCCESS method=Login.loginCheckChrome(java.util.HashMap)[pr...)</span>
+                <span class="method-start">48257 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">loginCheckChrome({Function=logout, UserName=ducati@gmail.com, Test Id=Store-407, AlertMessage=, Password=ducati14})</span>
+                <span class="method-start">48258 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=loginCheckChrome status=FAILURE method=Login.loginCheckChrome(java.util.HashMap)[pr...)</span>
+                <span class="method-start">55613 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">loginCheckChrome({Function=session, UserName=ducati@gmail.com, Test Id=Store-408, AlertMessage=, Password=ducati14})</span>
+                <span class="method-start">55615 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=loginCheckChrome status=SUCCESS method=Login.loginCheckChrome(java.util.HashMap)[pr...)</span>
+                <span class="method-start">64322 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">loginCheckChrome({Function=closeButton, UserName=, Test Id=Store-409, AlertMessage=, Password=})</span>
+                <span class="method-start">64323 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=loginCheckChrome status=SUCCESS method=Login.loginCheckChrome(java.util.HashMap)[pr...)</span>
+                <span class="method-start">72064 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">loginCheckChrome({Function=xclose, UserName=, Test Id=Store-410, AlertMessage=, Password=})</span>
+                <span class="method-start">72066 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=loginCheckChrome status=SUCCESS method=Login.loginCheckChrome(java.util.HashMap)[pr...)</span>
+                <span class="method-start">78515 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">loginCheckEdge({Function=, UserName=ducati@gmail.com, Test Id=Store-402, AlertMessage=, Password=ducati14})</span>
+                <span class="method-start">78662 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=loginCheckEdge status=SUCCESS method=Login.loginCheckEdge(java.util.HashMap)[pri:0,...)</span>
+                <span class="method-start">94654 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">loginCheckEdge({Function=, UserName=invaliduser, Test Id=Store-403, AlertMessage=User does not exist., Password=pan...)</span>
+                <span class="method-start">94656 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=loginCheckEdge status=SUCCESS method=Login.loginCheckEdge(java.util.HashMap)[pri:0,...)</span>
+                <span class="method-start">107484 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">loginCheckEdge({Function=, UserName=ducati@gmail.com, Test Id=Store-404, AlertMessage=Wrong password., Password=Vol...)</span>
+                <span class="method-start">107487 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=loginCheckEdge status=SUCCESS method=Login.loginCheckEdge(java.util.HashMap)[pri:0,...)</span>
+                <span class="method-start">121414 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">loginCheckEdge({Function=, UserName=DUcati@gmail.com, Test Id=Store-405, AlertMessage=User does not exist., Passwor...)</span>
+                <span class="method-start">121417 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=loginCheckEdge status=SUCCESS method=Login.loginCheckEdge(java.util.HashMap)[pri:0,...)</span>
+                <span class="method-start">144597 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">loginCheckEdge({Function=, UserName=, Test Id=Store-406, AlertMessage=Please fill out Username and Password., Passw...)</span>
+                <span class="method-start">144599 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=loginCheckEdge status=SUCCESS method=Login.loginCheckEdge(java.util.HashMap)[pri:0,...)</span>
+                <span class="method-start">168131 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">loginCheckEdge({Function=logout, UserName=ducati@gmail.com, Test Id=Store-407, AlertMessage=, Password=ducati14})</span>
+                <span class="method-start">168133 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=loginCheckEdge status=FAILURE method=Login.loginCheckEdge(java.util.HashMap)[pri:0,...)</span>
+                <span class="method-start">179761 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">loginCheckEdge({Function=session, UserName=ducati@gmail.com, Test Id=Store-408, AlertMessage=, Password=ducati14})</span>
+                <span class="method-start">179764 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=loginCheckEdge status=SUCCESS method=Login.loginCheckEdge(java.util.HashMap)[pri:0,...)</span>
+                <span class="method-start">187268 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">loginCheckEdge({Function=closeButton, UserName=, Test Id=Store-409, AlertMessage=, Password=})</span>
+                <span class="method-start">187271 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=loginCheckEdge status=SUCCESS method=Login.loginCheckEdge(java.util.HashMap)[pri:0,...)</span>
+                <span class="method-start">193422 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">loginCheckEdge({Function=xclose, UserName=, Test Id=Store-410, AlertMessage=, Password=})</span>
+                <span class="method-start">193423 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=loginCheckEdge status=SUCCESS method=Login.loginCheckEdge(java.util.HashMap)[pri:0,...)</span>
+                <span class="method-start">204880 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-test after">
+                <span class="method-name">closebrowser</span>
+                <span class="method-start">204883 ms</span>
+              </div> <!-- configuration-test after -->
+              <div class="configuration-suite after">
+                <span class="method-name">aft</span>
+                <span class="method-start">205712 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

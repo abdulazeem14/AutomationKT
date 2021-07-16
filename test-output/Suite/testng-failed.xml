@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="methods" name="Failed suite [Suite]">
+  <test parallel="methods" name="LoginTestcase(failed)">
+    <classes>
+      <class name="store_Testcase.Login">
+        <methods>
+          <include name="loginCheckChrome" invocation-numbers="2 4"/>
+          <include name="aft"/>
+          <include name="Bsuite"/>
+          <include name="loginCheckEdge" invocation-numbers="0 1 3"/>
+          <include name="closebrowser"/>
+          <include name="getResult"/>
+        </methods>
+      </class> <!-- store_Testcase.Login -->
+    </classes>
+  </test> <!-- LoginTestcase(failed) -->
+</suite> <!-- Failed suite [Suite] -->
