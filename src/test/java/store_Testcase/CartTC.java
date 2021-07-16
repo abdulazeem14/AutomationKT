@@ -14,9 +14,10 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
+import common.Base;
 import pageObjects.Cart;
 import pageObjects.HomePage;
-import resources.Base;
+
 
 public class CartTC extends Base{
 

@@ -15,7 +15,7 @@ public class HomePage {
 	By aboutus=By.xpath("//*[@id=\"navbarExample\"]/ul/li[8]");
 	By cart=By.xpath("//*[@id=\"cartur\"]");
 	By login=By.xpath("//*[@id=\"login2\"]");
-	By logout=By.xpath("//*[@id='logout2']");
+	public By logout=By.xpath("//*[@id='logout2']");
 	By signup=By.xpath("//*[@id=\"signin2\"]");
 	By Lusername=By.xpath("//*[@id=\"loginusername\"]");
 	By Lpassword=By.xpath("//*[@id=\"loginpassword\"]");
@@ -135,4 +135,6 @@ public class HomePage {
 	{
  return wd.findElement(xclose);		
 	}
+	
+	
 }

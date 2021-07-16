@@ -12,9 +12,9 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
+import common.Base;
 import pageObjects.HomePage;
 import pageObjects.PDP;
-import resources.Base;
 
 public class Category extends Base{
 	
