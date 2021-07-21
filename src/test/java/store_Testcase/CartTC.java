@@ -9,14 +9,12 @@ import java.util.HashMap;
 import java.util.Iterator;
 
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
+import Manager.POManager;
 import common.Base;
-import pageObjects.Cart;
-import pageObjects.HomePage;
 
 
 public class CartTC extends Base{
@@ -28,13 +26,11 @@ public class CartTC extends Base{
 		test=extent.createTest(td.get("Test ID"));
 		WebDriver wd=initializeDriver("Chrome");
 		s_assert=new SoftAssert();
-	HomePage hp=new HomePage(wd);
+		POManager pom=new POManager(wd);
 	NumberFormat nf = NumberFormat.getNumberInstance();
 	nf.setMaximumFractionDigits(0);
-	
-	Category addproduct=new Category(wd);
-int i=1;
-		
+	ADDProductToCart addproduct=new ADDProductToCart(wd);
+	int i=1;
 	while(i<=3) {
 		if(td.get("Product"+i+" Name").equals(""))
 		{
@@ -48,9 +44,9 @@ int i=1;
 		}
 		
 		}
-	hp.cart().click();
+	pom.getHomePage().cart().click();
 	Thread.sleep(5000);
-	Cart ct=new Cart(wd);
+	
 	i=1;
 	while(i<=3)
 	{
@@ -60,22 +56,22 @@ int i=1;
 			
 		}
 		else {
-			//System.out.println(td.k(ct.title(i).getText())+"=="+ct.title(i).getText());
-			s_assert.assertEquals(td.containsValue(ct.title(i).getText()),true,"product name");
-			//have to assert cart items
+			
+			s_assert.assertEquals(td.containsValue(pom.getCart().title(i).getText()),true,"product name");
+		
 		}
 		i++;
 		
 	}
 	float total=Float.parseFloat(td.get("Total Amount"));
 	String rounded = nf.format(total).replaceAll("[^a-zA-Z0-9]","");
-	System.out.println(rounded+"==check total amt="+ct.total().getText());
-	s_assert.assertEquals(rounded, ct.total().getText(),"Total Amount");
-	ct.placeOrder().click();
+	System.out.println(rounded+"==check total amt="+pom.getCart().total().getText());
+	s_assert.assertEquals(rounded, pom.getCart().total().getText(),"Total Amount");
+	pom.getCart().placeOrder().click();
 	Thread.sleep(5000);
-	ct.pname().sendKeys(td.get("Name"));
-	ct.creditcard().sendKeys(td.get("Credit Card Number"));
-	ct.purchase().click();
+	pom.getCart().pname().sendKeys(td.get("Name"));
+	pom.getCart().creditcard().sendKeys(td.get("Credit Card Number"));
+	pom.getCart().purchase().click();
 	if(td.get("Name").equals("")||td.get("Credit Card Number").equals(""))
 	{
 		Thread.sleep(5000);
@@ -86,7 +82,7 @@ int i=1;
 	
 	Thread.sleep(5000);
 	
-	String str[]=ct.orderDetails().getText().split("\\r?\\n");
+	String str[]=pom.getCart().orderDetails().getText().split("\\r?\\n");
 	HashMap<String,String> od=new HashMap<>();
 for(int j=0;j<str.length;j++)
 {

@@ -27,5 +27,15 @@ public class PDP {
 		return wd.findElement(PDPAddtocart);
 		
 	}
+	public String getProductName()
+	{
+		return pdpName().getText();
+	}
+	public String[] getProductPrice() {
+		return pdpPrice().getText().split(" ");
+	}
+	public void addToCart() {
+		pdpAddtocart().click();
+	}
 	
 }

@@ -30,37 +30,29 @@ public class Signup extends Base{
 		s_assert=new SoftAssert();
 		Navigatetosite(wd);
 		POManager pom=new POManager(wd);
-		//	wd.get(prop.getProperty("url"));
-		//test=extent.createTest(td.get("Test Id"));
 		log.add("STORE website loaded with the given URL");
-		pom.CreateTestCase("test1");
-		pom.performImplicitWait(wd);
+		pom.getReport().CreateTestCase("test1");
+		pom.getwaitOpertion().performImplicitWait(wd);
 		pom.getHomePage();
-	//HomePage hp=new HomePage(wd);
-		pom.Navigatetosignup();
-		pom.SignupCredentials(username, password);
-		pom.clickSingnup();
-	
+		pom.getHomePage().Navigatetosignup();
+		pom.getHomePage().SignupCredentials(username, password);
+		pom.getHomePage().clickSingnup();
 	if(!username.contains("@")) {
-		s_assert.assertEquals(wd.switchTo().alert().getText(),"Invalid username.","Invalid email Error");
+		s_assert.assertEquals(pom.getalert().alertGettext(wd),"Invalid username.","Invalid email Error");
 	}
 	if(username.contains("@")&&password.length()<8)
 	{
-		s_assert.assertEquals(wd.switchTo().alert().getText(),"passsword is not strong.","password is not strong but new user creted");
+		s_assert.assertEquals(pom.getalert().alertGettext(wd),"passsword is not strong.","password is not strong but new user creted");
 	}
 	if(username.contains("@")) {
-	s_assert.assertEquals(pom.alertGettext(wd),"Sign up successful.");
-	pom.alertaccept(wd);
+	s_assert.assertEquals(pom.getalert().alertGettext(wd),"Sign up successful.");
+	pom.getalert().alertaccept(wd);
 	log.add("User was registered Successfully");
 	}
 	wd.close();
 	s_assert.assertAll();
 	}
-	
-	
-	
 		
-	
 	@DataProvider
 	public Object[][] validtestdata() throws IOException
 	{

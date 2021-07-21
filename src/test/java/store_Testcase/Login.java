@@ -14,6 +14,8 @@ import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 import Manager.POManager;
 import common.Base;
+import common.WaitOperation;
+import pageObjects.HomePage;
 
 
 
@@ -30,25 +32,24 @@ public class Login extends Base{
 			String Function=testdata.get("Function");
 			String TestId=testdata.get("Test Id");
 			String AlertMessage=testdata.get("AlertMessage");
-				Navigatetosite(wd);
-					log.add("Store Website is Loaded with given URL:"+prop.getProperty("url"));
+			Navigatetosite(wd);
+			log.add("Store Website is Loaded with given URL:"+prop.getProperty("url"));
 			POManager pom=new POManager(wd);
-				pom.performImplicitWait(wd);
-				pom.CreateTestCase(TestId);
-				pom.getHomePage();
-				pom.navigatetoLogin();
-	if(Function.equals("logout")) 
+			pom.getwaitOpertion().performImplicitWait(wd);
+			pom.getReport().CreateTestCase(TestId);
+			pom.getHomePage().navigatetoLogin();
+			if(Function.equals("logout")) 
 		{
-				pom.login(Username, Password);
-					log.add("Login is Success with valid credentials");
-				pom.performExplictwait(wd, pom.getlogoutxpath());
-				pom.logout();
-					log.add("User was able to logOut as Expected");
+				pom.getHomePage().login(Username, Password);
+				log.add("Login is Success with valid credentials");
+				pom.getwaitOpertion().performExplictwait(wd, pom.getHomePage().getlogoutxpath());
+				pom.getHomePage().logout();
+				log.add("User was able to logOut as Expected");
 		}
 		
 	if(Function.equals(""))
 		{
-			    pom.login(Username, Password);
+					pom.getHomePage().login(Username, Password);
 					log.add("Username is entered:"+Username);
 					log.add("Password is entered:"+Password);
 		
@@ -59,12 +60,12 @@ public class Login extends Base{
 		{
 			s_assert.assertEquals(wd.switchTo().alert().getText(), AlertMessage);
 			log.add(testdata.get("AlertMessage")+": Alert message is displayed as expected");
-			pom.alertaccept(wd);
+			pom.getalert().alertaccept(wd);
 		}	
 		}
 	catch(Exception E)
 		{
-		s_assert.assertEquals(pom.getUserName(), "Welcome "+Username);
+		s_assert.assertEquals(pom.getHomePage().getUserName(), "Welcome "+Username);
 			log.add("Login success with valid credentials");
 		}
 		}
@@ -72,36 +73,34 @@ public class Login extends Base{
 					s_assert.assertAll();
 		}
 		
-		
 		@Test(dataProvider="validtestdata")
-		public void loginCheckChrome(HashMap<String,String> td) throws IOException, InterruptedException {
+		public void loginCheckChrome(HashMap<String,String> testdata) throws IOException, InterruptedException {
 			log=new ArrayList<String>();
 			s_assert=new SoftAssert();
 			wd=initializeDriver("Chrome");
-			String Username=td.get("UserName");
-			String Password=td.get("Password");
-			String Function=td.get("Function");
-			String TestId=td.get("Test Id");
-			String AlertMessage=td.get("AlertMessage");
-				Navigatetosite(wd);
-					log.add("Store Website is Loaded with given URL:"+prop.getProperty("url"));
+			String Username=testdata.get("UserName");
+			String Password=testdata.get("Password");
+			String Function=testdata.get("Function");
+			String TestId=testdata.get("Test Id");
+			String AlertMessage=testdata.get("AlertMessage");
+			Navigatetosite(wd);
+			log.add("Store Website is Loaded with given URL:"+prop.getProperty("url"));
 			POManager pom=new POManager(wd);
-				pom.performImplicitWait(wd);
-				pom.CreateTestCase(TestId);
-				pom.getHomePage();
-				pom.navigatetoLogin();
-	if(Function.equals("logout")) 
+			pom.getwaitOpertion().performImplicitWait(wd);
+			pom.getReport().CreateTestCase(TestId);
+			pom.getHomePage().navigatetoLogin();
+			if(Function.equals("logout")) 
 		{
-				pom.login(Username, Password);
-					log.add("Login is Success with valid credentials");
-				pom.performExplictwait(wd, pom.getlogoutxpath());
-				pom.logout();
-					log.add("User was able to logOut as Expected");
+				pom.getHomePage().login(Username, Password);
+				log.add("Login is Success with valid credentials");
+				pom.getwaitOpertion().performExplictwait(wd, pom.getHomePage().getlogoutxpath());
+				pom.getHomePage().logout();
+				log.add("User was able to logOut as Expected");
 		}
 		
 	if(Function.equals(""))
 		{
-			    pom.login(Username, Password);
+					pom.getHomePage().login(Username, Password);
 					log.add("Username is entered:"+Username);
 					log.add("Password is entered:"+Password);
 		
@@ -111,24 +110,19 @@ public class Login extends Base{
 	if(w.until(ExpectedConditions.alertIsPresent())!=null)
 		{
 			s_assert.assertEquals(wd.switchTo().alert().getText(), AlertMessage);
-			log.add(td.get("AlertMessage")+": Alert message is displayed as expected");
-			pom.alertaccept(wd);
+			log.add(testdata.get("AlertMessage")+": Alert message is displayed as expected");
+			pom.getalert().alertaccept(wd);
 		}	
 		}
 	catch(Exception E)
 		{
-		s_assert.assertEquals(pom.getUserName(), "Welcome "+Username);
+		s_assert.assertEquals(pom.getHomePage().getUserName(), "Welcome "+Username);
 			log.add("Login success with valid credentials");
 		}
 		}
 					wd.close();
 					s_assert.assertAll();
-		}	
-		@AfterTest
-		public void closebrowser() {
-			wd.quit();
 		}
-		
 		
 		
 		
