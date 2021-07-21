@@ -16,11 +16,11 @@ import common.Base;
 import pageObjects.HomePage;
 import pageObjects.PDP;
 
-public class Category extends Base{
+public class ADDProductToCart extends Base{
 	
 	SoftAssert s_assert;
 	WebDriver wd;
-	public Category(WebDriver wd) {
+	public ADDProductToCart(WebDriver wd) {
 		this.wd = wd;
 	}
 

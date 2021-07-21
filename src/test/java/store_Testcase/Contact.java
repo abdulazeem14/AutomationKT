@@ -32,30 +32,29 @@ public class Contact extends Base{
 		Navigatetosite(wd);
 		log.add("Store website is loaded Successfully using the Given URL: "+prop.getProperty("url"));
 		POManager pom=new POManager(wd);
-		pom.getHomePage();
-		pom.performImplicitWait(wd);
-		pom.CreateTestCase(TestID);
-		pom.NavigatetoContact();
-		pom.EnterContactDetails(ContactEmail, ContactName, Message);
+		pom.getwaitOpertion().performImplicitWait(wd);
+		pom.getReport().CreateTestCase(TestID);
+		pom.getHomePage().NavigatetoContact();
+		pom.getHomePage().EnterContactDetails(ContactEmail, ContactName, Message);
 	
 		log.add("Contact Email filled with: "+ContactEmail);
 	
 		log.add("Contact name is filled with: "+ContactName);
 	
 		log.add("Message field is filled with: "+Message);
-		pom.SendMessage();
+		pom.getHomePage().SendMessage();
 	
 if(ContactEmail.equals("")||ContactName.equals("")||Message.equals(""))
 	{
 		s_assert.assertEquals(wd.switchTo().alert().getText(), "input field is empty","User can send a message if input field is empty"
 				+ "");
 		
-		pom.alertaccept(wd);
+		pom.getalert().alertaccept(wd);
 	}
 else 
 	{
 		s_assert.assertEquals(wd.switchTo().alert().getText().toString(), "Thanks for the message!!");
-		pom.alertaccept(wd);
+		pom.getalert().alertaccept(wd);
 		log.add("After message sent Acknowledgement message has been displayed as Thanks for the message!!");
 	}
 		wd.close();
@@ -76,26 +75,26 @@ else
 		log.add("Store website is loaded Successfully using the Given URL: "+prop.getProperty("url"));
 		POManager pom=new POManager(wd);
 		pom.getHomePage();
-		pom.performImplicitWait(wd);
-		pom.CreateTestCase(TestID);
-		pom.NavigatetoContact();
-		pom.EnterContactDetails(ContactEmail, ContactName, Message);
+		pom.getwaitOpertion().performImplicitWait(wd);
+		pom.getReport().CreateTestCase(TestID);
+		pom.getHomePage().NavigatetoContact();
+		pom.getHomePage().EnterContactDetails(ContactEmail, ContactName, Message);
 		log.add("Contact Email filled with: "+ContactEmail);
 		log.add("Contact name is filled with: "+ContactName);
 		log.add("Message field is filled with: "+Message);
-		pom.SendMessage();
+		pom.getHomePage().SendMessage();
 	
 if(ContactEmail.equals("")||ContactName.equals("")||Message.equals(""))
 	{
 		s_assert.assertEquals(wd.switchTo().alert().getText(), "input field is empty","User can send a message if input field is empty"
 				+ "");
 		
-		pom.alertaccept(wd);
+		pom.getalert().alertaccept(wd);
 	}
 else 
 	{
 		s_assert.assertEquals(wd.switchTo().alert().getText().toString(), "Thanks for the message!!");
-		pom.alertaccept(wd);
+		pom.getalert().alertaccept(wd);
 		log.add("After message sent Acknowledgement message has been displayed as Thanks for the message!!");
 	}
 		wd.close();

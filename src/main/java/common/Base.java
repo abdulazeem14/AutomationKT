@@ -139,7 +139,7 @@ public class Base {
 
 	public static  ArrayList<HashMap<String,String>> tcdata(String sheetname) throws IOException
 	{
-		FileInputStream fis = new FileInputStream(new File("./TD/testdata.xlsx"));
+		FileInputStream fis = new FileInputStream(new File("./TestData/testdata.xlsx"));
 		
 		ArrayList<HashMap<String,String>> ls=new ArrayList<>();
 		//  XSSFRow row;

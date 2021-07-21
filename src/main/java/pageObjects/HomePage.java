@@ -1,12 +1,17 @@
 package pageObjects;
 
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class HomePage {
+import common.Base;
+
+public class HomePage extends Base {
 	WebDriver wd;
 	String cat=null;
 	int index;
@@ -135,6 +140,72 @@ public class HomePage {
 	{
  return wd.findElement(xclose);		
 	}
+		
+	public void navigatetoLogin()
+	{
+		login().click();	
+	}
+	public void login(String username,String pass) 
+	{
+	
+	Lusername().sendKeys(username);
+	Lpassword().sendKeys(pass);
+	
+	Llogin().click();
+	
+	}
+	
+	public void logout()
+	{
+		logOut().click();
+	}
+	public String getUserName() 
+	{
+	return Welcomeuser().getText();
+	
+	}
+	public By getlogoutxpath() 
+	{
+	return logout;
+	}
+	
+	public void NavigatetoContact() {
+		contact().click();
+	}
+	public void EnterContactDetails(String ContactEmail,String ContactName,String Message)
+	{
+		cEmail().sendKeys(ContactEmail);
+		
+		cContact().sendKeys(ContactName);
+		
+		CMessage().sendKeys(Message);
+		
+	}
+	public void SendMessage() {
+	cSendMessage().click();
+		
+	}
+	public List<WebElement> getCatergory() {
+		return Category();
+	}
+
+	public List<WebElement> getPLP(){
+		return plp();
+	}
+
+
+	public void Navigatetosignup() {
+		signup().click();
+	}
+
+	public void SignupCredentials(String username,String password) {
+		Susername().sendKeys(username);
+		Spassword().sendKeys(password);
+	}
+	public void clickSingnup() {
+		Ssignup().click();
+	}
+
 	
 	
 }

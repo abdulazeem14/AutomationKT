@@ -10,7 +10,11 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 
+import Utilities.ReportingUtils;
+import common.Alert;
+
 import common.Base;
+import common.WaitOperation;
 import pageObjects.Cart;
 import pageObjects.HomePage;
 import pageObjects.PDP;
@@ -20,10 +24,18 @@ public class POManager extends Base{
 	private HomePage hp;
 	private PDP pdp;
 	private Cart cart;
+	private ReportingUtils tc;
+	private WaitOperation waitoperation;
+	private Alert alert;
+	
 
 	public POManager(WebDriver wd)
 	{
 		this.wd=wd;
+	}
+	public WaitOperation getwaitOpertion()
+	{
+		return (waitoperation==null)?waitoperation=new WaitOperation(wd):waitoperation;
 	}
 	
 	public HomePage getHomePage()
@@ -38,6 +50,15 @@ public class POManager extends Base{
 	{
 		return (cart == null) ? cart = new Cart(wd) : cart;
 	}
+
+	public ReportingUtils getReport() {
+		return (tc==null) ? tc=new ReportingUtils():tc;
+		
+	}
+	public Alert getalert() {
+		return alert==null?alert=new Alert():alert;
+	}
+
  
 	public void navigatetoLogin()
 	{
@@ -96,34 +117,10 @@ public void EnterContactDetails(String ContactEmail,String ContactName,String Me
 	hp.cContact().sendKeys(ContactName);
 	
 	hp.CMessage().sendKeys(Message);
+
 	
-}
-public void SendMessage() {
-	hp.cSendMessage().click();
 	
-}
-///////////////////////////Category methods////////////////////////
-public List<WebElement> getCatergory() {
-	return hp.Category();
-}
 
-public List<WebElement> getPLP(){
-	return hp.plp();
-}
-
-/////////////////SingnUp////////////////////
-
-public void Navigatetosignup() {
-	hp.signup().click();
-}
-
-public void SignupCredentials(String username,String password) {
-	hp.Susername().sendKeys(username);
-	hp.Spassword().sendKeys(password);
-}
-public void clickSingnup() {
-	hp.Ssignup().click();
-}
 
 
 }
