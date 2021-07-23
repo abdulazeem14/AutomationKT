@@ -106,7 +106,9 @@ public void performExplictwait(WebDriver WD,By xpath)
 public By getlogoutxpath() {
 	return hp.logout;
 }
-///////////////////////Contact methods////////////
+
 
 
 }
+
+
