@@ -1,5 +1,4 @@
-
-	package store_Testcase;
+package store_Testcase;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -8,14 +7,11 @@ import java.util.Iterator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 import Manager.POManager;
 import common.Base;
-import common.WaitOperation;
-import pageObjects.HomePage;
 
 
 

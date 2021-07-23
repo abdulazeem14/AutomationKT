@@ -8,7 +8,6 @@ import org.openqa.selenium.WebDriver;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
-
 import Manager.POManager;
 import common.Base;
 
@@ -98,7 +97,6 @@ else
 	
 	}
 	
-	
 	@DataProvider(name="validtestdata")
 	public Object[][] validtestdata() throws IOException
 	{
@@ -116,9 +114,7 @@ else
 		
 		}
 		    return obj;
-	
-				
+			
 	}
-	
 	
 }
