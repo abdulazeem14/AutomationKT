@@ -90,7 +90,7 @@ else
 	{
 		s_assert.assertEquals(wd.switchTo().alert().getText().toString(), "Thanks for the message!!");
 		pom.getalert().alertaccept(wd);
-		log.add("After message sent Acknowledgement message has been displayed as Thanks for the message!!");
+		
 	}
 		wd.close();
 		s_assert.assertAll();
