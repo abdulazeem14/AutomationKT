@@ -106,22 +106,7 @@ public void performExplictwait(WebDriver WD,By xpath)
 public By getlogoutxpath() {
 	return hp.logout;
 }
-///////////////////////Contact methods////////////
-public void NavigatetoContact() {
-	hp.contact().click();
-}
-public void EnterContactDetails(String ContactEmail,String ContactName,String Message)
-{
-	hp.cEmail().sendKeys(ContactEmail);
-	
-	hp.cContact().sendKeys(ContactName);
-	
-	hp.CMessage().sendKeys(Message);
 
-	
-	
 
 }
 
-}
-}
