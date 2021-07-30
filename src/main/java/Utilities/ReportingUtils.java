@@ -1,15 +1,12 @@
 package Utilities;
 
-import org.openqa.selenium.WebDriver;
+import common.Basecls;
 
-import common.Base;
+public class ReportingUtils extends Basecls {
 
-public class ReportingUtils extends Base {
 
-	
-	public void CreateTestCase(String TestID)
-	{
-	test=extent.createTest(TestID);
-	}
-	
+    public void CreateTestCase(String TestID) {
+        objTest = objExtent.createTest(TestID);
+    }
+
 }
